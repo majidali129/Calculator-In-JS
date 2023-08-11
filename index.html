@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <section class="container mx-auto flex items-center justify-center min-h-screen ">
+
+
+    <section class="calc-wrapper w-[60%] md:w-[35vw]  lg:w-[25vw]  m-auto bg-[#0b2639] py-1 rounded-md">
+        <h3 class="main-heading text-white opacity-70 text-center">Calculator</h3>
+        <div class="text-section text-end ">
+            <div class="input-section text-[#fff] opacity-90  px-8 w-full h-[60px]  tracking-wider flex items-end justify-end " id="user_input"></div>
+            <div class="output-section text-[#fff] font-semibold tracking-wider h-[60px] pb-8 px-8 " id="output"></div>    
+        </div>
+        <div class="btn-container bg-[#0c2742] py-5 border-t-2 border-[#24b6ff] flex flex-col items-center justify-center  gap-4">
+            <div class="btn-wrapper flex flex-row item-center gap-4 lg:gap-6">
+                <button class=" clear font-bold  text-lg" id="clear">C</button>
+                <button class=" opt  text-[#ccc]  text-lg" id="offBTN">OFF</button>
+                <button class=" opt btn  text-[#ccc] text-lg">%</button>
+                <button class=" opt btn  text-lg">&#47;</button>
+            </div>
+            <div class="btn-wrapper flex flex-row item-center gap-4 lg:gap-6">
+                <button class=" btn  text-[#ccc] text-lg">1</button>
+                <button class=" btn text-[#ccc]  text-lg">2</button>
+                <button class=" btn  text-[#ccc] text-lg">3</button>
+                <button class=" btn opt  text-lg">x</button>
+            </div>
+            <div class="btn-wrapper flex flex-row item-center gap-4 lg:gap-6">
+                <button class=" btn text-[#ccc]  text-lg">4</button>
+                <button class=" text-[#ccc] btn  text-lg">5</button>
+                <button class=" btn text-[#ccc]  text-lg">6</button>
+                <button class=" btn opt text-lg">&#43;</button>
+            </div>
+            <div class="btn-wrapper flex flex-row item-center gap-4 lg:gap-6">
+                <button class=" btn  text-[#ccc] text-lg">7</button>
+                <button class=" btn  text-[#ccc] text-lg">8</button>
+                <button class=" btn text-[#ccc]  text-lg">9</button>
+                <button class="opt btn  text-lg">&#45;</button>
+            </div>
+            <div class="btn-wrapper flex flex-row item-center gap-4 lg:gap-6">
+                <button class=" btn  text-[#ccc] text-lg">&#46;</button>
+                <button class=" btn  text-[#ccc] text-lg">0</button>
+                <button class=" btn  text-[#ccc] text-lg">000</button>
+                <button class="opt equal  text-xl" id='result'>&#61;</button>
+            </div>
+        </div>
+
+    </section>
+
+   
+
+  </section>
+</body>
+</html>
